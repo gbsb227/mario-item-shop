@@ -1,0 +1,95 @@
+.item {
+  display: flex;
+  gap: 50px;
+  margin: 0 70px;
+}
+
+.item-left {
+  flex-grow: 2;
+}
+
+.item-detail {
+  display: flex;
+  border: 5px dashed;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.item-img {
+  width: 150px;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.item-detail-right {
+  width: 100%;
+  padding: 40px 30px 40px;
+}
+
+.item-name {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.item-intro {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.item-count {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.item-count p {
+  font-size: 50px;
+}
+
+.item-count button {
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.item-right {
+  flex-grow: 1;
+}
+
+.order {
+  border-radius: 30px;
+  background-color: var(--light-gray);
+  padding: 40px 30px;
+  position: sticky;
+  top: 30px;
+}
+
+.order-title {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.ordered-items {
+  padding-bottom: 30px;
+}
+
+.ordered-item {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.ordered-item-number {
+  font-weight: bold;
+}
+
+.order-button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+}

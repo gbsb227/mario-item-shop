@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="asset/img/favticon.png" />
+    <link rel="apple-touch-icon" href="/asset/img/favticon.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/upload.css" />
+    <title>글 작성 : Mario Item Shop</title>
+  </head>
+  <body>
+    <header>
+      <section class="first-row">
+        <h1 class="page-title">
+          <a href="/">
+            <img
+              src="asset/img/title-logo.png"
+              alt="Mario Item Shop"
+              class="logo-img"
+            />
+          </a>
+        </h1>
+        <section class="auth">
+          <section class="auth-function">
+            <a href="login.html" class="login">로그인</a>
+            <a href="signin.html" class="signin">회원가입</a>
+          </section>
+        </section>
+      </section>
+      <nav>
+        <ul class="menu">
+          <li class="menu-list">
+            <button class="menu-list-button">
+              product
+              <img
+                src="asset/img/down-arrow.png"
+                alt=""
+                class="menu-list-img"
+              />
+            </button>
+            <div class="sub-menu-wrap hidden">
+              <ul class="sub-menu">
+                <li class="sub-menu-list">
+                  <a href="index.html#mushroom-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/super-mushroom.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>버섯 아이템</p>
+                      <p>기본적인 버섯 아이템</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a href="index.html#skill-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/fire-flower.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>기술 아이템</p>
+                      <p>기술을 가질 수 있는 아이템</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a href="index.html#bother-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/banana.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>방해 아이템</p>
+                      <p>상대를 방해하는 아이템</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-list"><a href="order.html">order</a></li>
+          <li class="menu-list"><a href="community.html">community</a></li>
+          <li class="menu-list"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="upload-wrap">
+        <button class="upload-button">작성하기</button>
+        <form class="upload-form">
+          <input
+            type="text"
+            placeholder="제목을 입력하세요"
+            class="upload-input-style post-title"
+          />
+          <textarea
+            placeholder="내용을 입력하세요"
+            class="upload-textarea-style post-content"
+          ></textarea>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>

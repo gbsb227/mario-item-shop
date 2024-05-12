@@ -1,0 +1,78 @@
+.login-form {
+  width: 500px;
+  margin: 5% auto 0;
+  padding: 70px;
+  text-align: center;
+  border: 1px solid var(--light-gray);
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 30px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  padding: 1px 10px;
+}
+
+.text-input {
+  margin-bottom: 50px;
+}
+
+.button-style {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.login-button {
+  background-color: var(--main-red);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.find-button {
+  border-left: 2px solid #000;
+  font-size: 16px;
+}
+
+.find-button:hover {
+  color: var(--main-blue);
+}
+
+.find-button:first-child {
+  border: none;
+}
+
+.find-wrap {
+  display: flex;
+}

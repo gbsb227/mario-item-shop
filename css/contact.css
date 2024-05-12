@@ -1,0 +1,9 @@
+.info-wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.info-wrap p {
+  font-size: 20px;
+  padding: 20px;
+}

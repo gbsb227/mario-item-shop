@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="asset/img/favticon.png" />
+    <link rel="apple-touch-icon" href="/asset/img/favticon.png" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Mario Item Shop</title>
+  </head>
+  <body>
+    <header>
+      <section class="first-row">
+        <h1 class="page-title">
+          <a href="/">
+            <img
+              src="asset/img/title-logo.png"
+              alt="Mario Item Shop"
+              class="logo-img"
+            />
+          </a>
+        </h1>
+        <section class="auth">
+          <section class="auth-function">
+            <a href="login.html" class="login">로그인</a>
+            <a href="signin.html" class="signin">회원가입</a>
+          </section>
+        </section>
+      </section>
+      <nav>
+        <ul class="menu">
+          <li class="menu-list">
+            <button class="menu-list-button">
+              product
+              <img
+                src="asset/img/down-arrow.png"
+                alt=""
+                class="menu-list-img"
+              />
+            </button>
+            <div class="sub-menu-wrap hidden">
+              <ul class="sub-menu">
+                <li class="sub-menu-list">
+                  <a href="#mushroom-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/super-mushroom.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>버섯 아이템</p>
+                      <p>기본적인 버섯 아이템</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a href="#skill-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/fire-flower.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>기술 아이템</p>
+                      <p>기술을 가질 수 있는 아이템</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a href="#bother-item" class="sub-menu-list-link">
+                    <img
+                      src="asset/img/banana.png"
+                      alt=""
+                      class="sub-menu-list-img"
+                    />
+                    <div class="sub-menu-list-detail">
+                      <p>방해 아이템</p>
+                      <p>상대를 방해하는 아이템</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-list"><a href="order.html">order</a></li>
+          <li class="menu-list"><a href="community.html">community</a></li>
+          <li class="menu-list"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="image-carousel"
+        class="splide carousel-style"
+        aria-label="Beautiful Images"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="asset/img/slide1.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="asset/img/slide2.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="asset/img/slide3.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product">
+        <h3 class="section-title hidden">products</h3>
+
+        <section class="mushroom-item" id="mushroom-item">
+          <img src="asset/img/mega-mushroom.png" alt="" class="product-img" />
+          <p class="product-title">버섯 아이템</p>
+          <p class="product-detail">몸 크기를 조정</p>
+          <p class="product-detail">늘어났다 줄어났다</p>
+          <p class="product-detail">다양한 종류</p>
+
+          <div class="product-div"></div>
+        </section>
+        <section class="skill-item" id="skill-item">
+          <img src="asset/img/blue-shell.png" alt="" class="product-img" />
+          <p class="product-title">기능 아이템</p>
+          <p class="product-detail">다양한 기술</p>
+          <p class="product-detail">공격및 방어 가능</p>
+          <p class="product-detail">무적이 될수도..?</p>
+          <div class="product-div"></div>
+        </section>
+        <section class="bother-item" id="bother-item">
+          <img src="asset/img/banana.png" alt="" class="product-img" />
+          <p class="product-title">방해 아이템</p>
+          <p class="product-detail">상대방을 방해</p>
+          <p class="product-detail">시야 진로 등 방해 가능</p>
+          <p class="product-detail">물폭탄을 날려버리자!</p>
+          <div class="product-div"></div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>email : gbsb227@gmail.com</p>
+      <p>github : github.com/gbsb227</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

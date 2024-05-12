@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="asset/img/favticon.png" />
+    <link rel="apple-touch-icon" href="/asset/img/favticon.png" />
+    <title>로그인 : Mario Item Shop</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section class="login-form">
+      <h2>
+        <a href="/"><img src="asset/img/title-logo.png" /></a>
+      </h2>
+      <form>
+        <div class="text-input email-input">
+          <label for="user-id">이메일</label>
+          <input type="email" name="sign-in" id="user-id" />
+        </div>
+        <div class="text-input pw-input">
+          <label for="user-pw">비밀번호</label>
+          <input type="password" id="user-pw" />
+        </div>
+      </form>
+      <button class="button-style login-button">로그인</button>
+      <section class="find-wrap">
+        <!-- <a href="findid.html" class="button-style find-button">아이디 찾기</a
+        > -->
+        <a href="findpw.html" class="button-style find-button">비밀번호 찾기</a>
+        <a href="signin.html" class="button-style find-button">회원가입</a>
+      </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

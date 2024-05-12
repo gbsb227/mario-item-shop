@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "NeoDunggeunmoPro-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-red: #ff6363;
+  --main-blue: #3f60f6;
+  --light-gray: #f0f0f0;
+  --gray: #bcbcbc;
+  --dark-gray: #3e3e3e;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: NeoDunggeunmoPro-Regular;
+  background-color: #fff;
+}
+
+header {
+  margin: 50px 100px;
+}
+
+.first-row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  width: 300px;
+}
+
+.auth {
+  margin-left: auto;
+}
+
+.auth-function .signin {
+  color: #fff;
+}
+
+.login {
+  display: inline-block;
+  padding: 10px 30px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  border: 1px solid var(--main-red);
+}
+
+.login:hover {
+  /* color: var(--main-red); */
+}
+
+.signin {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 23px;
+  border-radius: 10px;
+  background-color: var(--main-blue);
+  margin-left: 10px;
+}
+
+.signin:hover {
+}
+
+.user-name {
+  display: inline-block;
+  padding: 10px;
+}
+
+.logout {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+
+.logout:hover {
+  color: var(--main-red);
+}
+
+nav {
+  border-bottom: 1px solid #000;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-list {
+  cursor: pointer;
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.menu-list > * {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.menu-list > button::after {
+  /* display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url("../asset/img/down-arrow.png") no-repeat 0px 0px;
+  background-size: cover;
+  position: absolute;
+  top: 25px;
+  left: 88px; */
+}
+
+.menu-list-img {
+  width: 10px;
+}
+
+.menu-list:hover {
+  color: var(--main-red);
+}
+
+.menu-list:hover > .sub-menu-wrap {
+  display: block;
+}
+
+.sub-menu-wrap:hover {
+  display: block;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+.sub-menu-wrap {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  position: absolute;
+  top: 61px;
+  z-index: 999;
+  display: none;
+  padding: 20px;
+  color: #000;
+}
+
+.sub-menu {
+  margin: 0 auto;
+}
+
+.sub-menu-list {
+  margin: 0 auto;
+}
+
+.sub-menu-list-link {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.sub-menu-list-wrap {
+  display: flex;
+}
+
+.sub-menu-list-img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.sub-menu-list-detail {
+  padding: 10px 0;
+}
+
+.sub-menu-list-detail p {
+  padding: 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+main {
+  margin: 30px 100px;
+}
+
+.page-name {
+  font-size: 40px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  margin: 100px 100px;
+}
