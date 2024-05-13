@@ -1,7 +1,7 @@
 # mario-item-shop
 
 ## 링크
-[mario-item-shop.vercel.app](mario-item-shop.vercel.app)
+[mario-item-shop.vercel.app](https://mario-item-shop.vercel.app/)
 
 ## 사용기술
 html
